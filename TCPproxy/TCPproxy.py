@@ -10,7 +10,7 @@ import sys
 
 BUFFER_SIZE = 2 ** 12 #Keep buffer size as power of 2.
 
-#DONT EDIT THIS UNLESS YOU WANT TO ADD MORE HOTKEYS (current functionality exists for 'space' and 0..9)
+#DONT EDIT THIS UNLESS YOU WANT TO ADD MORE HOTKEYS (current functionality exists for ctrl + 'space' and 0..9)
 	 
 def tcp_proxy(src, dst):
 	"""Run TCP proxy.
@@ -43,7 +43,7 @@ def tcp_proxy(src, dst):
 	HOTKEY = False
 	  
 	### add more hotkeys here
-	for key in ['space']+[str(n) for n in range(0,10)]:
+	for key in ['ctrl+space']+['ctrl+'+str(n) for n in range(0,10)]:
 		keyboard.add_hotkey(key, set_HOTKEY, args=[key])
 	
 	while True:
