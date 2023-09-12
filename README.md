@@ -3,18 +3,18 @@
 In this workshop you will:
 1. Analyse which packets correlate with which actions in Artemis.
 2. Spoof the client packets using Python instead of clicking the game screen.
-Extra: Write a script to chain multiple messages together.
-Extra: Write a script to edit legitimate client commands.
+3. (Extra) Write a script to chain multiple messages together.
+4. (Extra) Write a script to edit legitimate client commands.
 
 ### 1. Setup TCP Proxy
-The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP using either ```ipconfig``` (Windows) or ```ifconfig``` (Linux). 
+The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP running either ```ipconfig``` (Windows) or ```ifconfig``` (Linux) in your Terminal (Command Prompt). 
 ```cmd
 Wireless LAN adapter WiFi:
 
    Connection-specific DNS Suffix  . : Home
    IPv4 Address. . . . . . . . . . . : XXX.XXX.XXX.XXX
 ```
-Now open Terminal (Command Prompt) and copy and paste the commands below. The server host will share their IP address.
+Next, copy and paste the commands below. The server host will share their IP address.
 ```cmd
 git clone https://github.com/rohlex18/ArtemisWorkshop
 cd ArtemisWorkshop
@@ -54,7 +54,7 @@ Starting TCP proxy... press ctrl+C to exit
 
 Start exploring the game and watch how actions (mouse clicks) you take produce packets in the console. For convenience they are printed in 4-byte groupings that represent **fields**. As different packets are produced can you guess what each packet means? why is the first one always ```deadbeef```? How are the 2nd and 5th fields related (hint: convert the values to decimal)?
 
-Notice that `deadbeef:0000001c:00000002:00000000:00000008:4c821d3c:00000024` keeps appearing even when you don't click any actions. What is this packet? Filter it out using the code below.
+Notice that `deadbeef:0000001c:00000002:00000000:00000008:4c821d3c:00000024` appears repeatedly, even when you don't click any actions. What is this packet? Filter it out using the code below.
 
 ![](img/heartbeat.PNG)
 
@@ -65,6 +65,8 @@ Now we are ready to use the keyboard to send our own Artemis packets! In the ```
 ![](img/folder_hierarchy.png)
 
 ![](img/sending_packets.png)
+
+Try returning to the `console choice` screen and switching roles. Do your previous custom commands still work? How could Artemis prevent this from happening?  
 
 ### 5. Manipulating Packets
 
