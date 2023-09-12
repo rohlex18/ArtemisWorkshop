@@ -14,29 +14,35 @@ def string_to_bytes(packet_string: str):
 
 def create_packet(key):
 	string_to_send = ''
-	''' Use this function to generate new packets from the client. (sudo required) '''
+	''' Use this function to generate new packets from the client. '''
 
 	# Your Mission for Weapons Role #
 
 	### Send a packet to turn the shields on ###
-	if key=='space':
-		string_to_send = "deadbeef:00000020:00000002:00000000:0000000c:4c821d3c:00000004:00000000" #edit this, warning dont use ctrl-C on the terminal
-
-	### Send a packet to load both tubes ###
-
-	### Create a hotkey to load each of the ordinance types ###
-	if key=='0':
-		string_to_send = ""
-  
-	if key=='9':
-		string_to_send = ""
+	if key=='ctrl+space':
+		string_to_send = "deadbeef:00000020:00000002:00000000:0000000c:4c821d3c:00000004:00000000"
 		
+	### Send a packet to load both tubes ###
+	if key=='ctrl+1':
+		tube1 = ""  #edit this. Warning: don't use ctrl-C on the terminal, right-click instead
+		tube2 = ""
+		string_to_send = tube1 + ':' + tube2
+		
+	### Create a hotkey to load each of the ordinance types ###	
 		
 	# Your Mission for Helm Role #
 
-	### Send a packet to adjust the pitch (diving/neutral/climbing) ###
+	### Send a packet to adjust the pitch (diving/climbing) ###
+	if key=='ctrl+2': 
+		string_to_send = ""
 
-	### Send a packet to turn the ship hard right ###2
+	if key=='ctrl+3': 
+		string_to_send = ""
+
+	### Send a packet to turn the ship hard right ###
+
+	if key=='ctrl+4': 
+		string_to_send = ""
 
 	### Create a hotkey for each increment of 10 on the impulse slider (yellow vertical) ###
 
