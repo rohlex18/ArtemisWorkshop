@@ -64,9 +64,9 @@ Now we are ready to use the keyboard to send our own Artemis packets! In the ```
 
 ![](img/folder_hierarchy.png)
 
-Raising and lowering the shields has been done as an example. Press `ctrl+space` to spoof a shields packet.
+Raising and lowering the shields has been done as an example. Press `ctrl+space` to spoof a shields packet. Try copying other packets you've identified and edit the Python code to spoof these as well.
 
-![](img/sending_packets.png)
+![](img/sending_packets.PNG)
 
 Try returning to the `console choice` screen and switching roles. Do your previous custom commands still work? How could Artemis prevent this from happening?  
 
