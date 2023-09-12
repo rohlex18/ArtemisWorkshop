@@ -50,11 +50,11 @@ Start exploring the game and watch how actions (mouse clicks) you take produce p
 
 Notice that `deadbeef:0000001c:00000002:00000000:00000008:4c821d3c:00000024` keeps appearing even when you don't click any actions. What is this packet? Filter it out using the code below.
 
-![](img/heartbeat.png)
+![](img/heartbeat.PNG)
 
 ### 4. Sending Packets 
 
-Now we are ready to use the keyboard to send our own Artemis packets! In the ```artemis-workshop``` folder we will only be editing the ```pwn_client.py``` file. I've set it up so any legitimate edits to this file can be instantly seen on the TCP server, but if you have a syntax error or accidently click ```ctrl-C``` then you will have to rerun ```main.py``` and reconnect your Artemis client.
+Now we are ready to use the keyboard to send our own Artemis packets! In the ```ArtemisWorkshop``` folder we will only be editing the ```pwn_client.py``` file. I've set it up so any legitimate edits to this file can be instantly seen on the TCP server, but if you have a syntax error or accidently click ```ctrl-C``` then you will have to rerun ```main.py``` and reconnect your Artemis client.
 
 ![](img/folder_hierarchy.png)
 
@@ -63,6 +63,8 @@ Now we are ready to use the keyboard to send our own Artemis packets! In the ```
 ### 5. Manipulating Packets
 
 In this section we will be a bit more covert and instead of using the keyboard to send packets, we will edit packets as they are sent from the client.
+
+![](img/forward_packets.PNG)
 
 ## Acknowledgements
 I'ld like to thank the Artemis creator, Thom Robertson, for his dedication to releasing updated game versions. Please support Thom's work by purchasing the [bridge license](https://www.artemisspaceshipbridge.com/store/p1/Artemis_Spaceship_Bridge_Simulator_2.html#/) or [steam license](https://store.steampowered.com/app/247350/Artemis_Spaceship_Bridge_Simulator/). I'ld also like to thank the Artemis community for providing [comprehensive protocol documentation](https://artemis-nerds.github.io/protocol-docs/).
