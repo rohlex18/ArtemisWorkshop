@@ -19,9 +19,9 @@ Next, copy and paste the commands below. The server host will share their IP add
 git clone https://github.com/rohlex18/ArtemisWorkshop
 cd ArtemisWorkshop
 pip install -r requirements.txt
-python main.py --src <YourIP> --dst <ServerIP>
+python main.py --src YourIP --dst ServerIP
 ```
-Do not include the `<>`. You should see:
+If it ran successfully, you should see:
 ```
 Starting TCP proxy... press ctrl+C to exit... right-click to copy!
 ```
