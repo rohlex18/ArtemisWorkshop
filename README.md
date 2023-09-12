@@ -3,8 +3,8 @@
 ### 1. Setup TCP Proxy
 The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP using either ```ipconfig``` (Windows) or ```ifconfig``` (Linux). The server host will share their IP address.
 ```cmd
-git clone ________
-cd artemis-workshop
+git clone https://github.com/rohlex18/ArtemisWorkshop
+cd ArtemisWorkshop
 pip install -r requirements.txt
 python main.py --src <YourIP> --dst <ServerIP>
 ```
