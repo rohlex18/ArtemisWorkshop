@@ -21,16 +21,16 @@ Starting TCP proxy... press ctrl+C to exit... right-click to copy!
 ```
 
 ### 2. Setup Artemis Client
-[Visit this link](https://universityofadelaide.box.com/s/ywlggscc58hpwc7ekq3kpr0327fbswvz) and download the Artemis executable. Follow the install prompts and accept the firewall configuration options. Pick the **800x600 windowed** resolution so that there is room on your screen to also show the TCP Proxy. Double check the version is `2.7.5`. To play as a client click `Start Client`.
+[Visit this link](https://universityofadelaide.box.com/s/ywlggscc58hpwc7ekq3kpr0327fbswvz) and download the Artemis executable. Follow the install prompts and accept the firewall configuration options. Pick the **800x600 windowed** resolution so that there is room on your screen to also show the TCP Proxy. Double check the version is `2.7.5`. Now, click `Start Client`.
 
 ![](img/artemis_welcome.png)
 
-**Do not supply the server address**. Instead enter your IP address `XXX.XXX.XXX.XXX` and click `Connect to Server`.
+**Do not supply the server address**. Instead enter your IP address `XXX.XXX.XXX.XXX` and once the server is available and your TCP Proxy is ready (Step 1), click `Connect to Server`.
 
 ![](img/artemis_connect.png)
 
-Select your ship! If Artemis is full, you may have to select a different one. Select your role! `Main Screen` is meant for the ship's captain to coordinate the bridge - this role has **no controls**. Each role is only available for one client per ship - so don't take all the roles!  `Helm` and `Weapons` are the easiest to get started.
-For the other roles, I suggest reading the [Wiki](https://artemissbs.fandom.com/wiki/ArtemisSBS_Wikia) for instructions. To join the game, click `Ready To Play`.
+Select your ship! If Artemis is full, you may have to select a different one. Select your role! `Main Screen` must be selected by someone for the ship to enter the game - this is meant for the ship's captain to coordinate the bridge - this role has **no controls**. Each role is only available for one client per ship - so don't take all the roles!  `Helm` and `Weapons` are the easiest to get started.
+For the other roles, I suggest [reading the Wiki](https://artemissbs.fandom.com/wiki/ArtemisSBS_Wikia) for instructions. To join the game, click `Ready To Play`.
 
 ![](img/artemis_role_selection.png)
 
@@ -46,7 +46,11 @@ Starting TCP proxy... press ctrl+C to exit
 2023-08-15 20:05:21.829783: client --> deadbeef:0000001c:00000002:00000000:00000008:4c821d3c:00000024
 ```
 
-Start exploring the game and watch how actions (mouse clicks) you take produce packets in the console. For convenience they are printed in 4-byte groupings that represent **fields**. As different packets are produced can you guess what each packet means? why is the first one always ```deadbeef```? How is the 2nd and 5th field related?
+Start exploring the game and watch how actions (mouse clicks) you take produce packets in the console. For convenience they are printed in 4-byte groupings that represent **fields**. As different packets are produced can you guess what each packet means? why is the first one always ```deadbeef```? How are the 2nd and 5th fields related (hint: convert the values to decimal)?
+
+Notice that `deadbeef:0000001c:00000002:00000000:00000008:4c821d3c:00000024` keeps appearing even when you don't click any actions. What is this packet? Filter it out using the code below.
+
+![](img/heartbeat.png)
 
 ### 4. Sending Packets 
 
