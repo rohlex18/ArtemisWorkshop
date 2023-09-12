@@ -10,7 +10,7 @@ python main.py --src <YourIP> --dst <ServerIP>
 ```
 You should see:
 ```
-Starting TCP proxy... press ctrl+C to exit
+Starting TCP proxy... press ctrl+C to exit... right-click to copy!
 ```
 
 ### 2. Setup Artemis Client
