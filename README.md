@@ -56,7 +56,7 @@ Start exploring the game and watch how actions (mouse clicks) you take produce p
 
 Notice that `deadbeef:0000001c:00000002:00000000:00000008:4c821d3c:00000024` appears repeatedly, even when you don't click any actions. What is this packet? Filter it out using the code below.
 
-![](img/heartbeat.PNG)
+![](img/heartbeat.png)
 
 ### 4. Sending Packets 
 
