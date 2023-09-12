@@ -7,7 +7,7 @@ In this workshop you will:
 4. (Extra) Write a script to edit legitimate client commands.
 
 ### 1. Setup TCP Proxy
-The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP running either ```ipconfig``` (Windows) or ```ifconfig``` (Linux) in your Terminal (Command Prompt). 
+The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP by running either ```ipconfig``` (Windows) or ```ifconfig``` (Linux) in your Terminal (Command Prompt). This will output:
 ```cmd
 Wireless LAN adapter WiFi:
 
@@ -64,13 +64,15 @@ Now we are ready to use the keyboard to send our own Artemis packets! In the ```
 
 ![](img/folder_hierarchy.png)
 
+Raising and lowering the shields has been done as an example. Press `ctrl+space` to spoof a shields packet.
+
 ![](img/sending_packets.png)
 
 Try returning to the `console choice` screen and switching roles. Do your previous custom commands still work? How could Artemis prevent this from happening?  
 
 ### 5. Manipulating Packets
 
-In this section we will be a bit more covert and instead of using the keyboard to send packets, we will edit packets as they are sent from the client.
+In this section we will be a bit more covert and instead of using the keyboard to send packets, we will use the TCP Proxy to edit packets as they are sent from the client.
 
 ![](img/forward_packets.PNG)
 
