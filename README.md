@@ -1,5 +1,11 @@
 # Artemis Workshop 🚀
 
+In this workshop you will:
+1. Analyse which packets correlate with which actions in Artemis.
+2. Spoof the client packets using Python instead of clicking the game screen.
+Extra: Write a script to chain multiple messages together.
+Extra: Write a script to edit legitimate client commands.
+
 ### 1. Setup TCP Proxy
 The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP using either ```ipconfig``` (Windows) or ```ifconfig``` (Linux). 
 ```cmd
