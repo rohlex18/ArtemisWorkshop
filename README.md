@@ -8,7 +8,7 @@ cd ArtemisWorkshop
 pip install -r requirements.txt
 python main.py --src <YourIP> --dst <ServerIP>
 ```
-You should see:
+Do not include the `<>'. You should see:
 ```
 Starting TCP proxy... press ctrl+C to exit... right-click to copy!
 ```
