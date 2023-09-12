@@ -1,7 +1,14 @@
 # Artemis Workshop 🚀
 
 ### 1. Setup TCP Proxy
-The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP using either ```ipconfig``` (Windows) or ```ifconfig``` (Linux). The server host will share their IP address.
+The TCP Proxy is automatically configured to listen on the Artemis port (2010) and forward to the server's 2010 port. You will need to find your Client IP using either ```ipconfig``` (Windows) or ```ifconfig``` (Linux). 
+```cmd
+Wireless LAN adapter WiFi:
+
+   Connection-specific DNS Suffix  . : Home
+   IPv4 Address. . . . . . . . . . . : XXX.XXX.XXX.XXX
+```
+Now open Terminal (Command Prompt) and copy and paste the commands below. The server host will share their IP address.
 ```cmd
 git clone https://github.com/rohlex18/ArtemisWorkshop
 cd ArtemisWorkshop
