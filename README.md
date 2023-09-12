@@ -43,7 +43,7 @@ Start exploring the game and watch how actions (mouse clicks) you take produce p
 
 ### 4. Sending Packets 
 
-Now we are ready to use the keyboard to send our own Artemis packets! In the ```artemis-workshop``` folder we will only be editing the ```hack_client.py``` file. I've set it up so any legitimate edits to this file can be instantly seen on the TCP server, but if you have a syntax error or accidently click ```ctrl-C``` then you will have to rerun ```main.py``` and reconnect your Artemis client.
+Now we are ready to use the keyboard to send our own Artemis packets! In the ```artemis-workshop``` folder we will only be editing the ```pwn_client.py``` file. I've set it up so any legitimate edits to this file can be instantly seen on the TCP server, but if you have a syntax error or accidently click ```ctrl-C``` then you will have to rerun ```main.py``` and reconnect your Artemis client.
 
 ![](img/folder_hierarchy.png)
 
