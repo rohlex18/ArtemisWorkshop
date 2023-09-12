@@ -14,7 +14,7 @@ Starting TCP proxy... press ctrl+C to exit... right-click to copy!
 ```
 
 ### 2. Setup Artemis Client
-Visit this [link](https://universityofadelaide.box.com/s/ywlggscc58hpwc7ekq3kpr0327fbswvz) and download the Artemis executable. Follow the install prompts and accept the firewall configuration options. Double check the version is `2.7.5`. To play as a client click `Start Client`.
+Visit this [link](https://universityofadelaide.box.com/s/ywlggscc58hpwc7ekq3kpr0327fbswvz) and download the Artemis executable. Follow the install prompts and accept the firewall configuration options. Pick the **800x600 windowed** resolution so that there is room on your screen to also show the TCP Proxy. Double check the version is `2.7.5`. To play as a client click `Start Client`.
 
 ![](img/artemis_welcome.png)
 
