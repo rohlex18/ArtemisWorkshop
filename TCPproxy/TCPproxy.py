@@ -18,6 +18,10 @@ def tcp_proxy(src, dst):
 	src -- Source IP address and port string. I.e.: '127.0.0.1:8000'
 	dst -- Destination IP address and port. I.e.: '127.0.0.1:8888'
 	"""
+	if src == 'YourIP' or dst == 'ServerIP':
+		print('You need to replace "YourIP" and "ServerIP" with the IP address in the format X.X.X.X')
+		return None
+	
 	print('Starting TCP proxy... press ctrl+C to exit... right-click to copy!')
 	 
 	sockets = []
